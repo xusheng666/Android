@@ -107,6 +107,8 @@ public class SingtelReminderActivity extends ListActivity {
 			TextView result = (TextView)findViewById(R.id.Result);
 			result.setText(""+ totalMins +" minutes");
 			if(totalMins>200){
+				result.setTextColor(Color.YELLOW);
+			}else{
 				result.setTextColor(Color.RED);
 			}
 		}

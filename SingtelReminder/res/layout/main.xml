@@ -3,12 +3,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" 
-    android:background="#3366FF">
+    android:background="#66CCFF">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calltypeLabel"/>
+        android:text="@string/calltypeLabel"
+        android:textColor="#FF3300"/>
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -33,7 +34,7 @@
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/billDate" 
-        />
+        android:textColor="#FF3300"/>
     
     <DatePicker
         android:id="@+id/datePicker1"
@@ -50,7 +51,7 @@
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/totalOutcoming" 
-        />
+        android:textColor="#FF3300"/>
 
     <TextView
         android:id="@+id/Result"
