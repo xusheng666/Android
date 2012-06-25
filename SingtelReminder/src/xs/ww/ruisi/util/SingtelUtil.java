@@ -20,7 +20,7 @@ public class SingtelUtil {
 	 * for singtel charging used.
 	 * @return
 	 */
-	public static String totalCallTime(ArrayList<Integer> durationList){
+	public static int totalCallTime(ArrayList<Integer> durationList){
 		int totalChargeMin = 0;
 		
 		for (int i = 0; i < durationList.size(); i++) {
@@ -36,7 +36,7 @@ public class SingtelUtil {
 			}
 		}
 		
-		return ""+totalChargeMin;
+		return totalChargeMin;
 	}
 	
 	public static String msAfterBaseDateWithInputYMD(int year, int month, int day){

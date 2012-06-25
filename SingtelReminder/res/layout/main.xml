@@ -2,12 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="#3366FF">
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/calltypeLabel" />
+        android:text="@string/calltypeLabel"/>
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -29,6 +30,11 @@
         </LinearLayout>
     </ScrollView>
 
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/billDate" 
+        />
+    
     <DatePicker
         android:id="@+id/datePicker1"
         android:layout_width="wrap_content"
@@ -38,18 +44,21 @@
         android:id="@+id/query"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/queryLabel" />
+        android:text="@string/queryLabel" 
+        />
 
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/totalOutcoming" />
+        android:text="@string/totalOutcoming" 
+        />
 
     <TextView
         android:id="@+id/Result"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" 
+        android:textColor="#00FF00">
     </TextView>
-    
+    
     <ListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"

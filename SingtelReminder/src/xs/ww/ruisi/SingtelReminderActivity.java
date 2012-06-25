@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import xs.ww.ruisi.util.SingtelUtil;
 import android.app.ListActivity;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -95,16 +96,19 @@ public class SingtelReminderActivity extends ListActivity {
 				
 			}
 			
-			String resultStr = "0";
+			int totalMins = 0;
 			if(durationList.size()>0){
-				resultStr = SingtelUtil.totalCallTime(durationList);
+				totalMins = SingtelUtil.totalCallTime(durationList);
 			}
 			
 //			Intent intent = new Intent(SingtelReminderActivity.this, CallHistoryActivity.class);
 //			startActivity(intent);
 			// set to result text
 			TextView result = (TextView)findViewById(R.id.Result);
-			result.setText(resultStr +" minutes");
+			result.setText(""+ totalMins +" minutes");
+			if(totalMins>200){
+				result.setTextColor(Color.RED);
+			}
 		}
 	};
 }

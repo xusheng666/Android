@@ -11,5 +11,6 @@
     <string name="queryLabel">Query</string>
     <string name="callhistory">Call History</string>
     <string name="totalOutcoming">Total Calling Times:</string>
+    <string name="billDate">Please select the bill date</string>
 
 </resources>
