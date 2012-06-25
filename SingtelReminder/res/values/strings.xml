@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="calltypeLabel">Call Type</string>
+    <string name="app_name">SingtelReminder</string>
+    <string-array name="callTypeValues">
+        <item>Outcoming</item><item >Incoming</item>
+        
+        <item >Missed</item>
+    </string-array>
+    <string name="queryLabel">Query</string>
+    <string name="callhistory">Call History</string>
+    <string name="totalOutcoming">Total Calling Times:</string>
+
+</resources>
