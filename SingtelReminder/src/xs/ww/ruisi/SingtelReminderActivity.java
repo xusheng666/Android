@@ -16,11 +16,16 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class SingtelReminderActivity extends ListActivity {
+	public int selectedDay = 22;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        // set initial day to query
+        DatePicker datePicker = (DatePicker)findViewById(R.id.datePicker1);
+        int preMonth = datePicker.getMonth()==1?12:datePicker.getMonth()-1;
+        datePicker.updateDate(datePicker.getYear(), preMonth , selectedDay);
         
         SingtelUtil util = new SingtelUtil();
         util.initialMap();
@@ -46,6 +51,7 @@ public class SingtelReminderActivity extends ListActivity {
 			// get the search date
 			DatePicker datePicker = (DatePicker)findViewById(R.id.datePicker1);
 			int day = datePicker.getDayOfMonth();
+			selectedDay = day;
 			int month = datePicker.getMonth();
 			int year = datePicker.getYear();
 			

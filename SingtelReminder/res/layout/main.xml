@@ -9,7 +9,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/calltypeLabel"
-        android:textColor="#FF3300"/>
+        android:textColor="#FF3300"
+        android:textSize="20dp"/>
 
     <ScrollView
         android:id="@+id/scrollView1"
@@ -34,7 +35,8 @@
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/billDate" 
-        android:textColor="#FF3300"/>
+        android:textColor="#FF3300"
+        android:textSize="20dp"/>
     
     <DatePicker
         android:id="@+id/datePicker1"
@@ -51,13 +53,15 @@
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/totalOutcoming" 
-        android:textColor="#FF3300"/>
+        android:textColor="#FF3300"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/Result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
-        android:textColor="#00FF00">
+        android:textColor="#00FF00"
+        android:textSize="18dp">
     </TextView>
     
     <ListView
